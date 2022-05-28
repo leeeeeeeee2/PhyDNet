@@ -10,7 +10,7 @@ import time
 from models.models import ConvLSTM,PhyCell, EncoderRNN
 from data.moving_mnist import MovingMNIST
 from constrain_moments import K2M
-from skimage.measure import compare_ssim as ssim
+from skimage.metrics import compare_ssim as ssim
 import argparse
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
